@@ -1,0 +1,90 @@
+version: '3.9'
+
+name: mail_project
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    hostname: postgreshost
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - "5432:5432"
+    networks:
+      - redis-network
+
+  adminer:
+    image: adminer
+    restart: always
+    hostname: adminerhost
+    ports:
+      - 8080:8080
+    networks:
+      - redis-network
+
+  redis:
+    image: redis:latest
+    restart: always
+    hostname: redishost
+    command: redis-server
+    volumes:
+      - redis:/var/lib/redis
+      - redis-config:/usr/local/etc/redis/redis.conf
+    ports:
+      - 6379:6379
+    networks:
+      - redis-network
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    restart: always
+    hostname: rediscommanderhost
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+      - HTTP_USER=root
+      - HTTP_PASSWORD=qwerty
+    ports:
+      - 8081:8081
+    networks:
+      - redis-network
+    depends_on:
+      - redis
+
+  apireg:
+    image: apireg
+    restart: always
+    hostname: regishost
+    ports:
+      - 9092:8080
+    networks:
+      - redis-network  
+
+  apimailserver:
+    image: apimailserver
+    restart: always
+    hostname: mailserverhost
+    ports:
+      - 9091:8080
+    networks:
+      - redis-network 
+
+  apigatewaymail:
+    image: apigatemail
+    restart: always
+    hostname: apigatewayhost
+    ports:
+      - 9093:8080
+    networks:
+      - redis-network
+
+
+
+volumes:
+  redis:
+  redis-config:
+
+networks:
+  redis-network:
+    driver: bridge  

@@ -1,0 +1,6 @@
+@ApiMailServer_HostAddress = http://localhost:5210
+
+GET {{ApiMailServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\controllers\\servercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:controllers\\servercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\dto\\messagessentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:dto\\messagessentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\db\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:db\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\db\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:db\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\repositories\\serverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:repositories\\serverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\repositories\\iserverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:repositories\\iserverrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\db\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:db\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-25T14:36:28.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\Message.cs",
+              "RelativeDocumentMoniker": "Db\\Message.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\Message.cs",
+              "RelativeToolTip": "Db\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T14:21:39.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessagesSentDto.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dto\\MessagesSentDto.cs",
+              "RelativeDocumentMoniker": "Dto\\MessagesSentDto.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dto\\MessagesSentDto.cs",
+              "RelativeToolTip": "Dto\\MessagesSentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T14:19:29.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-25T13:10:01.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MessageStatus.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageStatus.cs",
+              "RelativeDocumentMoniker": "Db\\MessageStatus.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageStatus.cs",
+              "RelativeToolTip": "Db\\MessageStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T11:01:01.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageDto.cs",
+              "RelativeDocumentMoniker": "Db\\MessageDto.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageDto.cs",
+              "RelativeToolTip": "Db\\MessageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T10:43:44.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAIwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T10:01:28.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServerController.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Controllers\\ServerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServerController.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Controllers\\ServerController.cs",
+              "RelativeToolTip": "Controllers\\ServerController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvygAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:59:42.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\ServerRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ServerRepository.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\ServerRepository.cs",
+              "RelativeToolTip": "Repositories\\ServerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:59:04.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IServerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\IServerRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IServerRepository.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\IServerRepository.cs",
+              "RelativeToolTip": "Repositories\\IServerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:58:50.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T09:57:44.529Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

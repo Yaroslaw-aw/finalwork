@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ApiGatewayMail.props" />
+</Project>

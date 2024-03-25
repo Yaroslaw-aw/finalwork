@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Rc1YxETcUHcWLOIFbAQQH6l2gpVYNp8Il/lKPCVToIw=",
+  "Source": "ApiMailServer",
+  "BasePath": "_content/ApiMailServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

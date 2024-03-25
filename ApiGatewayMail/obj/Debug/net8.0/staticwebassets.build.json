@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "O+TOaAbwazlPteqxYQOOyeUWP5BgzSWLVdyLNdftfZw=",
+  "Source": "ApiGatewayMail",
+  "BasePath": "_content/ApiGatewayMail",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
