@@ -56,8 +56,6 @@ services:
     image: apireg
     restart: always
     hostname: regishost
-    ports:
-      - 9092:8080
     networks:
       - redis-network  
 
@@ -65,8 +63,6 @@ services:
     image: apimailserver
     restart: always
     hostname: mailserverhost
-    ports:
-      - 9091:8080
     networks:
       - redis-network 
 

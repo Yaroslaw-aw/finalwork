@@ -79,8 +79,5 @@ namespace ApiRegistration.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-
-
-        
     }
 }

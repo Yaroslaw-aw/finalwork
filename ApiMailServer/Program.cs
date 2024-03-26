@@ -84,7 +84,7 @@ namespace ApiMailServer
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             //app.UseAuthentication();
 

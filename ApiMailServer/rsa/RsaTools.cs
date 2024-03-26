@@ -2,7 +2,7 @@
 
 namespace ApiMailServer.rsa
 {
-    public class RsaTools
+    internal sealed class RsaTools
     {
         public static RSA GetPrivateKey()
         {

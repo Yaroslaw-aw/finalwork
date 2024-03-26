@@ -12,6 +12,8 @@ using System.Text.RegularExpressions;
 
 namespace ApiRegistration.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class UserController : Controller
     {
         private readonly IUserRepository userRepository;
@@ -86,7 +88,7 @@ namespace ApiRegistration.Controllers
 
         [HttpPost(template: "WriteMessage")]
         [Authorize]
-        public async Task<ActionResult<string?>> WriteMessage(MessagePostDto message)
+        public async Task<ActionResult<string?>> WriteMessage([FromBody] MessagePostDto message)
         {
             Guid producerId = CurrentUserId();
             Guid? consumerId = message.ConsumerId;
@@ -101,9 +103,9 @@ namespace ApiRegistration.Controllers
         [Authorize]
         public async Task<ActionResult<string?>> GetMessages()
         {
-            Guid id = CurrentUserId();
+            Guid consumerId = CurrentUserId();            
 
-            string? messages = await clientServer.GetMessagesAsync(id);
+            string? messages = await clientServer.GetMessagesAsync(consumerId);
 
             IEnumerable<MessageGetDto>? mess = JsonSerializer.Deserialize<IEnumerable<MessageGetDto>>(messages);
 
@@ -125,7 +127,9 @@ namespace ApiRegistration.Controllers
         {
             ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
 
-            IEnumerable<Claim> userClaims = identity.Claims;
+            //IEnumerable<Claim> userClaims = identity.Claims;
+
+            IEnumerable<Claim> userClaims = HttpContext.User.Claims;
 
             Guid currentUserId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value);
 
