@@ -76,3 +76,4 @@ C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработк�
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiGatewayMail\obj\Debug\net8.0\ApiGatewayMail.pdb
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiGatewayMail\obj\Debug\net8.0\ApiGatewayMail.genruntimeconfig.cache
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiGatewayMail\obj\Debug\net8.0\ref\ApiGatewayMail.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiGatewayMail\obj\Debug\net8.0\ApiGatewayMail.sourcelink.json

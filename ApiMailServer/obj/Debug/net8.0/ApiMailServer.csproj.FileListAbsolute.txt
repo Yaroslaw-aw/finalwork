@@ -113,3 +113,4 @@ C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработк�
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiMailServer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiMailServer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiMailServer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiMailServer\obj\Debug\net8.0\ApiMailServer.sourcelink.json

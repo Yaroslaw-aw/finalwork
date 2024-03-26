@@ -13,7 +13,7 @@ namespace ApiRegistration.Client
 
         public async Task<string?> GetMessagesAsync(Guid consumerId)
         {
-            using HttpResponseMessage response = await client.GetAsync($"http://mailserverhost:8080/Server/GetMessages?consumerId={consumerId.ToString()}");
+            using HttpResponseMessage response = await client.GetAsync($"http://localhost:5210/Server/GetMessages?consumerId={consumerId.ToString()}");
 
             response.EnsureSuccessStatusCode();
 
@@ -26,7 +26,7 @@ namespace ApiRegistration.Client
         {
             SendMessageDto messageDto = new SendMessageDto() { Content = message, ConsumerId = consumerId, ProducerId = producerId };
 
-            HttpResponseMessage response = await client.PostAsJsonAsync("http://mailserverhost:8080/Server/WriteMessge", messageDto);
+            HttpResponseMessage response = await client.PostAsJsonAsync("http://localhost:5210/Server/WriteMessge", messageDto);
 
             response.EnsureSuccessStatusCode();
 

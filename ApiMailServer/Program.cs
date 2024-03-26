@@ -2,9 +2,11 @@
 using ApiMailServer.Db;
 using ApiMailServer.Mapping;
 using ApiMailServer.Repositories;
+using ApiMailServer.rsa;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace ApiMailServer
 {
@@ -24,12 +26,55 @@ namespace ApiMailServer
             builder.Services.AddScoped<IServerRepository, ServerRepository>();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
+            builder.Services.AddSingleton<RsaTools>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(opt =>
+            {
+                opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Please enter token",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    BearerFormat = "Token",
 
-            
+                    Scheme = "bearer"
+                });
+
+                opt.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[]{}
+                    }
+                });
+            });
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+
+                    IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey())
+                };
+            });
+
+
 
             var app = builder.Build();
 
@@ -40,6 +85,8 @@ namespace ApiMailServer
             }
 
             app.UseHttpsRedirection();
+
+            //app.UseAuthentication();
 
             app.UseAuthorization();
 

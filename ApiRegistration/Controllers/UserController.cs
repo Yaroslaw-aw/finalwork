@@ -86,7 +86,7 @@ namespace ApiRegistration.Controllers
 
         [HttpPost(template: "WriteMessage")]
         [Authorize]
-        public async Task<ActionResult<string?>> WriteMessage(MessageDto message)
+        public async Task<ActionResult<string?>> WriteMessage(MessagePostDto message)
         {
             Guid producerId = CurrentUserId();
             Guid? consumerId = message.ConsumerId;
@@ -105,9 +105,9 @@ namespace ApiRegistration.Controllers
 
             string? messages = await clientServer.GetMessagesAsync(id);
 
-            IEnumerable<MessageDto>? mess = JsonSerializer.Deserialize<IEnumerable<MessageDto>>(messages);
+            IEnumerable<MessageGetDto>? mess = JsonSerializer.Deserialize<IEnumerable<MessageGetDto>>(messages);
 
-            return Accepted(nameof(GetMessages), mess); 
+            return Accepted(nameof(GetMessages), mess);
         }
 
 
@@ -134,20 +134,19 @@ namespace ApiRegistration.Controllers
 
 
 
-        private UserModel GetCurrentUser()
+        private UserModel? GetCurrentUser()
         {
             ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
-            if (identity is not null)
+            if (identity is null) return null;
+
+            IEnumerable<Claim> userClaims = identity.Claims;
+
+            return new UserModel
             {
-                IEnumerable<Claim> userClaims = identity.Claims;
-                return new UserModel
-                {
-                    userId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value),
-                    UserEmail = userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value,
-                    Role = (UserRole)Enum.Parse(typeof(UserRole), userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value),
-                };
-            }
-            return null;
+                userId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value),
+                UserEmail = userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value,
+                Role = (UserRole)Enum.Parse(typeof(UserRole), userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value),
+            };
         }
 
 
@@ -159,10 +158,10 @@ namespace ApiRegistration.Controllers
                 password.Any(ch => char.IsUpper(ch)) &&
                 password.Any(ch => char.IsLetter(ch)) &&
                 password.Any(ch => char.IsDigit(ch)))
-            { 
+            {
                 return true;
             }
-            else 
+            else
             {
                 return false;
             }

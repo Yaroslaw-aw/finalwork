@@ -12,11 +12,12 @@ namespace ApiMailServer.Repositories
             this.context = context;
         }
 
-        public async Task<Guid?> WtiteMessageAsync(Message message)
+        public async Task<Guid?> WtiteMessageAsync(Message message, Guid producerId)
         {
             using (context)
             {
                 message.Status = MessageStatus.Sent;
+                message.ProducerId = producerId;
                 context.Messages.Add(message);
                 await context.SaveChangesAsync();
                 return message.Id;

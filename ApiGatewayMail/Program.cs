@@ -15,18 +15,22 @@ namespace ApiGatewayMail
             IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("ocelot.json").Build();
 
             builder.Services.AddOcelot(configuration);
-            builder.Services.AddSwaggerForOcelot(configuration);
 
+            builder.Services.AddSwaggerForOcelot(configuration);
 
             var app = builder.Build();
 
             app.UseSwagger();
+
             app.UseSwaggerForOcelotUI(opts =>
             {
                 opts.PathToSwaggerGenerator = "/swagger/docs";
+
             }).UseOcelot().Wait();
 
-            app.UseHttpsRedirection();
+            
+
+            //app.UseHttpsRedirection();
 
 
             app.Run();

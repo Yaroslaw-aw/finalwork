@@ -1,9 +1,11 @@
-﻿using ApiMailServer.Db;
+﻿using ApiMailServer.AuthorizationModel;
+using ApiMailServer.Db;
 using ApiMailServer.Dto;
 using ApiMailServer.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text.Json;
 
 namespace ApiMailServer.Controllers
@@ -22,20 +24,23 @@ namespace ApiMailServer.Controllers
         }
 
         [HttpPost(template: "WriteMessge")]
-        //[Authorize]
+        [Authorize]
         public async Task<ActionResult<Guid?>> WriteMessge(MessageDto messageDto)
         {
             Message message = mapper.Map<Message>(messageDto);
 
-            Guid? newMessageId = await repository.WtiteMessageAsync(message);
+            Guid producerId = CurrentUserId();
+
+            Guid? newMessageId = await repository.WtiteMessageAsync(message, producerId);
 
             return CreatedAtAction(nameof(WriteMessge), newMessageId);
         }
 
         [HttpGet(template: "GetMessages")]
-        //[Authorize]
-        public async Task<ActionResult<string>> GetMessages(Guid consumerId)
+        [Authorize]
+        public async Task<ActionResult<string>> GetMessages()
         {
+            Guid consumerId = CurrentUserId();
             IEnumerable<Message>? messages = await repository.GetMessagesAsync(consumerId);
 
             IEnumerable<MessagesSentDto>? messagesDto = new MessagesSentDto[messages.Count()];
@@ -45,6 +50,33 @@ namespace ApiMailServer.Controllers
             string send = JsonSerializer.Serialize(messagesDto);
 
             return Accepted(nameof(GetMessages), send);
+        }
+
+        private Guid CurrentUserId()
+        {
+            ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
+
+            IEnumerable<Claim> userClaims = identity.Claims;
+
+            Guid currentUserId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value);
+
+            return currentUserId;
+        }
+
+        private UserModel GetCurrentUser()
+        {
+            ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
+            if (identity is not null)
+            {
+                IEnumerable<Claim> userClaims = identity.Claims;
+                return new UserModel
+                {
+                    userId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value),
+                    UserEmail = userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value,
+                    Role = (UserRole)Enum.Parse(typeof(UserRole), userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value),
+                };
+            }
+            return null;
         }
     }
 }

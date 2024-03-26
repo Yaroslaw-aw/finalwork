@@ -5,12 +5,12 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "registrationhost",
-          "Port": 8080
+          "Host": "localhost",
+          "Port": 5138
         }
       ],
       "UpstreamPathTemplate": "/Login/{method}",
-      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamHttpMethod": [ "Post" ],
       "SwaggerKey": "clients"
     },
     {
@@ -18,12 +18,12 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "registrationhost",
-          "Port": 8080
+          "Host": "localhost",
+          "Port": 5138
         }
       ],
       "UpstreamPathTemplate": "/User/{method}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete" ],
       "SwaggerKey": "clients"
     },
     {
@@ -31,18 +31,18 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "mailserverhost",
-          "Port": 8080
+          "Host": "localhost",
+          "Port": 5210
         }
       ],
       "UpstreamPathTemplate": "/Server/{method}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "SwaggerKey": "mails"
+      "SwaggerKey": "mailserver"
     }
     
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://apigatewayhost:6696"
+    "BaseUrl": "https://localhost:7269"
   },
 
   "SwaggerEndPoints": [
@@ -53,7 +53,7 @@
         {
           "Name": "Client API",
           "Version": "v1",
-          "Url": "http://registrationhost:8080/swagger/v1/swagger.json"
+          "Url": "http://localhost:5138/swagger/v1/swagger.json"
         }
       ]
     },
@@ -64,7 +64,7 @@
         {
           "Name": "Mails API",
           "Version": "v1",
-          "Url": "http://mailserverhost:8080/swagger/v1/swagger.json"
+          "Url": "http://localhost:5210/swagger/v1/swagger.json"
         }
       ]
     }
