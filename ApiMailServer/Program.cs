@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.IdentityModel.Tokens.Jwt;
 
 namespace ApiMailServer
 {
@@ -60,26 +59,6 @@ namespace ApiMailServer
                 });
             });
 
-            // prevent from mapping "sub" claim to nameidentifier.
-            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-
-            //string? identityUrl = builder.Configuration["Jwt:Issuer"];
-
-            //builder.Services.AddAuthentication(options =>
-            //{
-            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-
-            //}).AddJwtBearer(options =>
-            //{
-            //    options.Authority = identityUrl;
-            //    options.RequireHttpsMetadata = false;
-            //    options.Audience = "http://localhost:5241";
-            //    options.TokenValidationParameters.IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey());
-            //});
-
-
-
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.TokenValidationParameters = new TokenValidationParameters
@@ -95,8 +74,6 @@ namespace ApiMailServer
                 };
             });
 
-
-
             var app = builder.Build();
 
             if (app.Environment.IsDevelopment())
@@ -104,13 +81,6 @@ namespace ApiMailServer
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            //app.UseCors(builder => builder.WithOrigins()
-              //                            .AllowCredentials());
-
-
-
-            //app.UseHttpsRedirection();
 
             app.UseAuthentication();
 
