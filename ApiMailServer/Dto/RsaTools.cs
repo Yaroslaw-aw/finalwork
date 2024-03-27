@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace ApiMailServer.rsa
+namespace ApiMailServer.Dto
 {
     internal sealed class RsaTools
     {

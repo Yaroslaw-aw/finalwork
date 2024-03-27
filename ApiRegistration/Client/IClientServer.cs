@@ -5,7 +5,7 @@ namespace ApiRegistration.Client
 {
     public interface IClientServer
     {
-        public Task<string?> WriteMessage(string? message, Guid? consumerId, Guid? producerId);
+        public Task<string?> WriteMessageAsync(string? message, Guid? consumerId, Guid? producerId);
         Task<string?> GetMessagesAsync(Guid consumerId);
     }
 }

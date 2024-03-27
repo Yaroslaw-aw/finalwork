@@ -94,9 +94,9 @@ namespace ApiRegistration.Controllers
             Guid? consumerId = message.ConsumerId;
             string? content = message.Content;
 
-            string? messageId = await clientServer.WriteMessage(content, consumerId, producerId);
+            string? messageId = await clientServer.WriteMessageAsync(content, consumerId, producerId);
 
-            return messageId;
+            return CreatedAtAction(nameof(WriteMessage), messageId);
         }
 
         [HttpGet(template: "GetMessages")]
@@ -169,6 +169,6 @@ namespace ApiRegistration.Controllers
             {
                 return false;
             }
-        }
+        }        
     }
 }

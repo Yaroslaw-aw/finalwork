@@ -3,6 +3,7 @@ using ApiMailServer.Db;
 using ApiMailServer.Dto;
 using ApiMailServer.Repositories;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -23,17 +24,17 @@ namespace ApiMailServer.Controllers
             this.mapper = mapper;
         }
 
-        [HttpPost(template: "WriteMessge")]
+        [HttpPost(template: "WriteMessage")]
         [Authorize]
-        public async Task<ActionResult<Guid?>> WriteMessge(MessageDto messageDto)
+        public async Task<ActionResult<Guid?>> WriteMessage([FromBody] MessageDto messageDto)
         {
             Message message = mapper.Map<Message>(messageDto);
 
             Guid producerId = CurrentUserId();
 
-            Guid? newMessageId = await repository.WtiteMessageAsync(message, producerId);
+            Guid? newMessageId = await repository.WriteMessageAsync(message, producerId);
 
-            return CreatedAtAction(nameof(WriteMessge), newMessageId);
+            return CreatedAtAction(nameof(WriteMessage), newMessageId);
         }
 
         [HttpGet(template: "GetMessages")]

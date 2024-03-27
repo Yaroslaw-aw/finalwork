@@ -1,10 +1,9 @@
 ﻿using ApiRegistration.AuthorizationModel;
 using ApiRegistration.Db;
-using ApiRegistration.rsa;
+using ApiRegistration.Dto;
 using ApiRegistration.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.RegularExpressions;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -19,7 +18,7 @@ namespace ApiRegistration.Controllers
         private readonly IUserAuthenticationService authenticationService;
         private readonly IUserRepository userRepository;
 
-        public LoginController(RsaTools rsaTools, IConfiguration config, IUserAuthenticationService authenticationService, IUserRepository userRepository)
+        public LoginController(IConfiguration config, IUserAuthenticationService authenticationService, IUserRepository userRepository)
         {
             this.config = config;
             this.authenticationService = authenticationService;

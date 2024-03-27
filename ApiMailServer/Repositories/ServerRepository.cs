@@ -12,8 +12,8 @@ namespace ApiMailServer.Repositories
             this.context = context;
         }
 
-        public async Task<Guid?> WtiteMessageAsync(Message message, Guid producerId)
-        {
+        public async Task<Guid?> WriteMessageAsync(Message message, Guid producerId)
+        {            
             using (context)
             {
                 message.Status = MessageStatus.Sent;

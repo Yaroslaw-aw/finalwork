@@ -1,18 +1,54 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Identity.Client;
+using Microsoft.IdentityModel.Tokens;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace ApiGatewayMail
 {
     public class Program
     {
+        //public void ConfigureServices(IServiceCollection services)
+        //{
+
+        //    var identityUrl = configuration.GetValue<string>("IdentityUrl");
+        //    var authenticationProviderKey = "IdentityApiKey";
+        //    //…
+        //    services.AddAuthentication()
+        //        .AddJwtBearer(authenticationProviderKey, x =>
+        //        {
+        //            x.Authority = identityUrl;
+        //            x.RequireHttpsMetadata = false;
+        //            x.TokenValidationParameters = new TokenValidationParameters()
+        //            {
+        //                ValidAudiences = new[] { "orders", "basket", "locations", "marketing", "mobileshoppingagg", "webshoppingagg" }
+        //            };
+        //        });
+        //}
+
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("ocelot.json").Build();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("ocelot.json").Build();
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+
+                    IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey())
+                };
+            });
+
 
             builder.Services.AddOcelot(configuration);
 
@@ -28,7 +64,7 @@ namespace ApiGatewayMail
 
             }).UseOcelot().Wait();
 
-            
+
 
             //app.UseHttpsRedirection();
 

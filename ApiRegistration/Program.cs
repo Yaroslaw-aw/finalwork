@@ -1,13 +1,14 @@
 using ApiRegistration.AuthorizationModel;
 using ApiRegistration.Client;
 using ApiRegistration.Db;
+using ApiRegistration.Dto;
 using ApiRegistration.Mapping;
 using ApiRegistration.Repositories;
-using ApiRegistration.rsa;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace ApiRegistration
 {
@@ -66,6 +67,8 @@ namespace ApiRegistration
                 });
             });
 
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            string? identityUrl = builder.Configuration["Jwt:Issuer"];
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.TokenValidationParameters = new TokenValidationParameters
@@ -93,6 +96,8 @@ namespace ApiRegistration
             //app.UseHttpsRedirection();
 
             //app.UseAuthentication();
+
+            
 
             app.UseAuthorization();
 
