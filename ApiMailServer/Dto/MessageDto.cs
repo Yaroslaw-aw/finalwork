@@ -1,8 +1,7 @@
-﻿namespace ApiMailServer.Db
+﻿namespace ApiMailServer.Dto
 {
     public class MessageDto
     {
-        //public Guid ProducerId { get; set; }
         public Guid ConsumerId { get; set; }
         public string? Content { get; set; }
     }

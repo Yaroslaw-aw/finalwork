@@ -89,7 +89,7 @@ namespace ApiMailServer
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    ValidAudiences = new[] { "reghost", "mailhost" },
 
                     IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey())
                 };

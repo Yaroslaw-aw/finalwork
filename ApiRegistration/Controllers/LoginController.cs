@@ -38,7 +38,7 @@ namespace ApiRegistration.Controllers
         {
             try
             {
-                User? user = await userRepository.CheckUserAsync(userLogin.Email, userLogin.Password);
+                User? user = await userRepository.CheckUserAsync(userLogin?.Email, userLogin?.Password);
 
                 UserModel userModel = new UserModel
                 {
@@ -67,7 +67,7 @@ namespace ApiRegistration.Controllers
             {
                 new Claim(ClaimTypes.PrimarySid, user.userId.ToString()),
                 new Claim(ClaimTypes.Email, user.UserEmail),
-                new Claim(ClaimTypes.Role, user.Role.ToString()),                
+                new Claim(ClaimTypes.Role, user.Role.ToString()),
             };
 
             JwtSecurityToken? token = new JwtSecurityToken(config["Jwt:Issuer"],

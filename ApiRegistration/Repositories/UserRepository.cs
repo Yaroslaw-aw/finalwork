@@ -1,8 +1,6 @@
-﻿using ApiRegistration.AuthorizationModel;
-using ApiRegistration.Db;
+﻿using ApiRegistration.Db;
 using ApiRegistration.Dto;
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
@@ -49,8 +47,10 @@ namespace ApiRegistration.Repositories
             }
         }
 
-        public async Task<User?> CheckUserAsync(string email, string password)
+        public async Task<User?> CheckUserAsync(string? email, string? password)
         {
+            if (email is null || password is null) throw new ArgumentNullException("email or password can't ne null");
+
             using (context)
             {
                 User? user = await context.Users.FirstOrDefaultAsync(usr => usr.Email == email);
@@ -59,10 +59,8 @@ namespace ApiRegistration.Repositories
                 {
                     throw new Exception($"{email} does not exist");
                 }
-
-                byte[]? data = Encoding.UTF8.GetBytes(password).Concat(user?.Salt).ToArray();
-                SHA512 shaM = new SHA512Managed();
-                byte[]? bpassword = shaM.ComputeHash(data);
+                
+                byte[]? bpassword = HashPassword(password, user.Salt);
 
                 if (user.Password.SequenceEqual(bpassword))
                 {
@@ -73,9 +71,8 @@ namespace ApiRegistration.Repositories
                     throw new Exception("Wrong password");
                 }
             }
-        }
+        }        
 
-        [Authorize(Roles = nameof(UserRole.Administrator))]
         public async Task<Guid?> DeleteUserAsync(Guid deleteUserId)
         {
             using (context)
@@ -115,9 +112,6 @@ namespace ApiRegistration.Repositories
         }
 
 
-        
-
-
         private byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];
@@ -140,12 +134,3 @@ namespace ApiRegistration.Repositories
 
     }
 }
-//if (roleId is RoleId.Admin)
-//{
-//    int adminsCount = await context.Users.CountAsync(user => user.RoleId == RoleId.Admin);
-
-//    if (adminsCount > 0)
-//    {
-//        throw new Exception("Администратор может быть только один");
-//    }
-//}

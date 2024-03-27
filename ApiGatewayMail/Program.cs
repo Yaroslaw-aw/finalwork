@@ -9,24 +9,6 @@ namespace ApiGatewayMail
 {
     public class Program
     {
-        //public void ConfigureServices(IServiceCollection services)
-        //{
-
-        //    var identityUrl = configuration.GetValue<string>("IdentityUrl");
-        //    var authenticationProviderKey = "IdentityApiKey";
-        //    //…
-        //    services.AddAuthentication()
-        //        .AddJwtBearer(authenticationProviderKey, x =>
-        //        {
-        //            x.Authority = identityUrl;
-        //            x.RequireHttpsMetadata = false;
-        //            x.TokenValidationParameters = new TokenValidationParameters()
-        //            {
-        //                ValidAudiences = new[] { "orders", "basket", "locations", "marketing", "mobileshoppingagg", "webshoppingagg" }
-        //            };
-        //        });
-        //}
-
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
@@ -43,7 +25,7 @@ namespace ApiGatewayMail
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    ValidAudiences = new[] { "reghost", "mailhost" },
 
                     IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey())
                 };
@@ -63,11 +45,6 @@ namespace ApiGatewayMail
                 opts.PathToSwaggerGenerator = "/swagger/docs";
 
             }).UseOcelot().Wait();
-
-
-
-            //app.UseHttpsRedirection();
-
 
             app.Run();
         }

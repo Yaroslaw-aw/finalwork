@@ -1,13 +1,10 @@
 ﻿using ApiRegistration.AuthorizationModel;
-using ApiRegistration.Client;
 using ApiRegistration.Db;
 using ApiRegistration.Dto;
 using ApiRegistration.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
 using System.Security.Claims;
-using System.Text.Json;
 using System.Text.RegularExpressions;
 
 namespace ApiRegistration.Controllers
@@ -17,14 +14,12 @@ namespace ApiRegistration.Controllers
     public class UserController : Controller
     {
         private readonly IUserRepository userRepository;
-        private readonly IMemoryCache cache;
-        private readonly IClientServer clientServer;
+        private readonly Redis redis;
 
-        public UserController(IUserRepository userRepository, IMemoryCache cache, IClientServer clientServer)
+        public UserController(IUserRepository userRepository, Redis redis)
         {
             this.userRepository = userRepository;
-            this.cache = cache;
-            this.clientServer = clientServer;
+            this.redis = redis;
         }
 
         [AllowAnonymous]
@@ -55,7 +50,7 @@ namespace ApiRegistration.Controllers
                     return StatusCode(500, ex.Message);
                 }
             }
-            cache.Remove("users");
+            redis.cache.Remove("users");
             return AcceptedAtAction(nameof(AddUser), userId);
         }
 
@@ -64,12 +59,12 @@ namespace ApiRegistration.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<GetUsersDto>?>> GetUsersAsync()
         {
-            if (cache.TryGetValue("users", out List<GetUsersDto>? cacheUsers) && cacheUsers is not null)
+            if (redis.TryGetValue("users", out List<GetUsersDto>? cacheUsers) && cacheUsers is not null)
                 return Accepted("GetUsers", cacheUsers);
 
             IEnumerable<GetUsersDto>? users = await userRepository.GetUsersAsync();
 
-            if (users is not null) cache.Set("users", users, TimeSpan.FromMinutes(10));
+            if (users is not null) redis.SetData<IEnumerable<GetUsersDto>>("users", users);
 
             return Accepted("GetUsers", users);
         }
@@ -80,40 +75,12 @@ namespace ApiRegistration.Controllers
         public async Task<ActionResult<Guid?>> DeleteUser(Guid userId)
         {
             Guid? deletedUserId = await userRepository.DeleteUserAsync(userId);
-            if (deletedUserId is not null) cache.Remove("users");
+            if (deletedUserId is not null) redis.cache.Remove("users");
             return Accepted(nameof(DeleteUser), deletedUserId);
         }
 
 
-
-        [HttpPost(template: "WriteMessage")]
-        [Authorize]
-        public async Task<ActionResult<string?>> WriteMessage([FromBody] MessagePostDto message)
-        {
-            Guid producerId = CurrentUserId();
-            Guid? consumerId = message.ConsumerId;
-            string? content = message.Content;
-
-            string? messageId = await clientServer.WriteMessageAsync(content, consumerId, producerId);
-
-            return CreatedAtAction(nameof(WriteMessage), messageId);
-        }
-
-        [HttpGet(template: "GetMessages")]
-        [Authorize]
-        public async Task<ActionResult<string?>> GetMessages()
-        {
-            Guid consumerId = CurrentUserId();            
-
-            string? messages = await clientServer.GetMessagesAsync(consumerId);
-
-            IEnumerable<MessageGetDto>? mess = JsonSerializer.Deserialize<IEnumerable<MessageGetDto>>(messages);
-
-            return Accepted(nameof(GetMessages), mess);
-        }
-
-
-        [HttpGet(template: "GetCurrentUserId")]
+        [HttpGet(template: nameof(GetCurrentUserId))]
         [Authorize]
         public async Task<ActionResult<Guid?>> GetCurrentUserId()
         {
@@ -125,10 +92,6 @@ namespace ApiRegistration.Controllers
 
         private Guid CurrentUserId()
         {
-            ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
-
-            //IEnumerable<Claim> userClaims = identity.Claims;
-
             IEnumerable<Claim> userClaims = HttpContext.User.Claims;
 
             Guid currentUserId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value);

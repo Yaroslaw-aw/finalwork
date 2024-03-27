@@ -11,3 +11,4 @@ ENV ASPNETCORE_ENVIRONMENT=Development
 EXPOSE 80
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet","/app/ApiMailServer.dll"]
+ADD rsa rsa/

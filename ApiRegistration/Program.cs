@@ -1,5 +1,4 @@
 using ApiRegistration.AuthorizationModel;
-using ApiRegistration.Client;
 using ApiRegistration.Db;
 using ApiRegistration.Dto;
 using ApiRegistration.Mapping;
@@ -8,7 +7,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.IdentityModel.Tokens.Jwt;
 
 namespace ApiRegistration
 {
@@ -28,9 +26,9 @@ namespace ApiRegistration
             builder.Services.AddEndpointsApiExplorer();
 
             builder.Services.AddSingleton<RsaTools>();
+            builder.Services.AddSingleton<Redis>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
-            builder.Services.AddScoped<IClientServer, ClientServer>();
             builder.Services.AddMemoryCache();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
@@ -67,7 +65,11 @@ namespace ApiRegistration
                 });
             });
 
-            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {                
+                options.Configuration = "redishost";
+            });
+
             string? identityUrl = builder.Configuration["Jwt:Issuer"];
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
@@ -78,7 +80,7 @@ namespace ApiRegistration
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    ValidAudiences = new[] { "reghost", "mailhost"},
 
                     IssuerSigningKey = new RsaSecurityKey(RsaTools.GetPublicKey())
                 };
@@ -93,14 +95,7 @@ namespace ApiRegistration
                 app.UseSwaggerUI();
             }
 
-            //app.UseHttpsRedirection();
-
-            //app.UseAuthentication();
-
-            
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 

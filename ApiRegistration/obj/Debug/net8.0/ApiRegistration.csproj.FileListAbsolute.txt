@@ -114,3 +114,9 @@ C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработк�
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\obj\Debug\net8.0\ApiRegistration.sourcelink.json
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\billi\OneDrive\Рабочий стол\Лекции\Разработка web-приложения на C#\Семинары\Mail\ApiRegistration\bin\Debug\net8.0\StackExchange.Redis.dll

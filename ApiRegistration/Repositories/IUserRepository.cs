@@ -1,5 +1,6 @@
 ﻿using ApiRegistration.Db;
 using ApiRegistration.Dto;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ApiRegistration.Repositories
 {
