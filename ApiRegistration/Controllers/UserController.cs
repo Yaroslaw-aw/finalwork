@@ -89,6 +89,14 @@ namespace ApiRegistration.Controllers
             return Accepted(nameof(GetCurrentUserId), currentUserId);
         }
 
+        [HttpGet(template: nameof(CheckCurrentUserId))]
+        [Authorize]
+        public async Task<ActionResult<bool>> CheckCurrentUserId(Guid id)
+        {
+            bool existingUser = await userRepository.ExistingUserAsync(id);
+            return Accepted(nameof(CheckCurrentUserId), existingUser);
+        }
+
 
         private Guid CurrentUserId()
         {

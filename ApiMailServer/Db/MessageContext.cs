@@ -17,7 +17,7 @@ namespace ApiMailServer.Db
 
                 entity.Property(e => e.ProducerId).HasColumnName("producer_id");
                 entity.Property(e => e.ConsumerId).HasColumnName("consumer_id");
-
+                entity.Property(e => e.ProducerEmail).HasColumnName("producer_email");
                 entity.Property(e => e.Content).HasColumnName("content");
 
                 entity.Property(e => e.Status).HasColumnName("status").HasConversion<string>();

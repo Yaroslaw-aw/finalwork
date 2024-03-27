@@ -111,6 +111,11 @@ namespace ApiRegistration.Repositories
             return usersDto;
         }
 
+        public async Task<bool> ExistingUserAsync(Guid userId)
+        {
+            return await context.Users.AnyAsync(usr => usr.userId == userId);
+        }
+
 
         private byte[] GenerateSalt()
         {

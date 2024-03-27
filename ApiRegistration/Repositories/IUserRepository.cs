@@ -10,5 +10,6 @@ namespace ApiRegistration.Repositories
         public Task<User?> CheckUserAsync(string email, string password);
         public Task<Guid?> DeleteUserAsync(Guid deleteUserId);
         public Task<IEnumerable<GetUsersDto>?> GetUsersAsync();
+        public Task<bool> ExistingUserAsync(Guid userId);
     }
 }

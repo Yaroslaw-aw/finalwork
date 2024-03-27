@@ -30,6 +30,10 @@ namespace ApiMailServer.Controllers
         {
             Message message = mapper.Map<Message>(messageDto);
 
+            UserModel producer = GetCurrentUser();
+
+            message.ProducerEmail = producer.UserEmail;
+
             Guid producerId = CurrentUserId();
 
             Guid? newMessageId = await repository.WriteMessageAsync(message, producerId);
@@ -44,13 +48,13 @@ namespace ApiMailServer.Controllers
             Guid consumerId = CurrentUserId();
             IEnumerable<Message>? messages = await repository.GetMessagesAsync(consumerId);
 
-            IEnumerable<MessagesSentDto>? messagesDto = new MessagesSentDto[messages.Count()];
+            IEnumerable<MessagesSentDto>? messagesDto = new MessagesSentDto[messages.Count()];            
 
             messagesDto = mapper.Map(messages, messagesDto);
 
-            string send = JsonSerializer.Serialize(messagesDto);
+            //string send = JsonSerializer.Serialize(messagesDto);
 
-            return Accepted(nameof(GetMessages), send);
+            return Accepted(nameof(GetMessages), messagesDto);
         }
 
         private Guid CurrentUserId()
@@ -73,7 +77,7 @@ namespace ApiMailServer.Controllers
                 return new UserModel
                 {
                     userId = new Guid(userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.PrimarySid)?.Value),
-                    UserEmail = userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.NameIdentifier)?.Value,
+                    UserEmail = userClaims.FirstOrDefault(claim => claim.Type == ClaimTypes.Email)?.Value,
                     Role = (UserRole)Enum.Parse(typeof(UserRole), userClaims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value),
                 };
             }
