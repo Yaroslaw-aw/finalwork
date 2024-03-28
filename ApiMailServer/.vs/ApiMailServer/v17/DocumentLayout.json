@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Controllers\\LoginController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apimailserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{24BC8048-27FE-4FE2-AAA3-39531F0BF807}|ApiMailServer.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -74,11 +77,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\ApiRegistration\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\ApiRegistration\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T04:25:33.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MessageContext.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageContext.cs",
               "RelativeDocumentMoniker": "Db\\MessageContext.cs",
@@ -91,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -103,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\AuthorizationModel\\UserModel.cs",
               "RelativeDocumentMoniker": "AuthorizationModel\\UserModel.cs",
@@ -116,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\AuthorizationModel\\UserRole.cs",
               "RelativeDocumentMoniker": "AuthorizationModel\\UserRole.cs",
@@ -128,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "RsaTools.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\rsa\\RsaTools.cs",
               "RelativeDocumentMoniker": "rsa\\RsaTools.cs",
@@ -140,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -152,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\Message.cs",
               "RelativeDocumentMoniker": "Db\\Message.cs",
@@ -165,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MessagesSentDto.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dto\\MessagesSentDto.cs",
               "RelativeDocumentMoniker": "Dto\\MessagesSentDto.cs",
@@ -178,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -191,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MessageStatus.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Db\\MessageStatus.cs",
               "RelativeDocumentMoniker": "Db\\MessageStatus.cs",
@@ -203,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MessageDto.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Dto\\MessageDto.cs",
               "RelativeDocumentMoniker": "Dto\\MessageDto.cs",
@@ -216,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -229,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ServerController.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Controllers\\ServerController.cs",
               "RelativeDocumentMoniker": "Controllers\\ServerController.cs",
@@ -242,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ServerRepository.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\ServerRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\ServerRepository.cs",
@@ -255,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IServerRepository.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Repositories\\IServerRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\IServerRepository.cs",
@@ -267,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiMailServer\\Mapping\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Mapping\\MappingProfile.cs",

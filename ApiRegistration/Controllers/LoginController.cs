@@ -34,7 +34,7 @@ namespace ApiRegistration.Controllers
 
         [AllowAnonymous]
         [HttpPost(template: "Login")]
-        public async Task<ActionResult> Login([FromBody] LoginModel userLogin)
+        public async Task<ActionResult<string>> Login([FromBody] LoginModel userLogin)
         {
             try
             {

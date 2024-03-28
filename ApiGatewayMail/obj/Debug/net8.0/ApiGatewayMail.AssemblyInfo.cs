@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiGatewayMail")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a462d29802c14e825e5de3432130289753bc115f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e147226228fdc5de3c1d0c822d7e025e4aadf78")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiGatewayMail")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiGatewayMail")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
