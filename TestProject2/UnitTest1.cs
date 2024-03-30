@@ -9,7 +9,7 @@ namespace TestProject2
     {
 
         [Fact]
-        public void TestMethodLogin()
+        public async void TestMethodLogin()
         {
             LoginModel login = new LoginModel { Email = "Vasya@mail.ru", Password = "Admin123!" };
             var mockUserService = new Mock<IUserAuthenticationService>();
@@ -18,7 +18,7 @@ namespace TestProject2
 
             Task<ActionResult<string>> result = controller.Login(login);
 
-            Assert.IsType<ActionResult<string>>(result.Result);
+            Assert.IsType<ActionResult<string>>(await result);
         }
     }
 }
