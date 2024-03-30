@@ -14,6 +14,14 @@
       "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\authorizationmodel\\authenticationmock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:authorizationmodel\\authenticationmock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\authorizationmodel\\iuserauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:authorizationmodel\\iuserauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,14 +46,6 @@
       "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\authorizationmodel\\authenticationmock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:authorizationmodel\\authenticationmock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|c:\\users\\billi\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u043B\u0435\u043A\u0446\u0438\u0438\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 c#\\\u0441\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\mail\\apiregistration\\db\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A33F8FA3-EA87-4923-B77D-388AAE298B32}|ApiRegistration.csproj|solutionrelative:db\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -65,16 +65,16 @@
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\TestProject2\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\TestProject2\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\TestProject2\\UnitTest1.cs",
-              "RelativeToolTip": "..\\TestProject2\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAABAAAA",
+              "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\TestProject2\\UnitTest1.cs*",
+              "RelativeToolTip": "..\\TestProject2\\UnitTest1.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T15:00:57.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginModel.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\AuthorizationModel\\LoginModel.cs",
               "RelativeDocumentMoniker": "AuthorizationModel\\LoginModel.cs",
@@ -82,12 +82,11 @@
               "RelativeToolTip": "AuthorizationModel\\LoginModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:17:43.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T14:17:43.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IUserAuthenticationService.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\AuthorizationModel\\IUserAuthenticationService.cs",
               "RelativeDocumentMoniker": "AuthorizationModel\\IUserAuthenticationService.cs",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "AuthorizationModel\\IUserAuthenticationService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T11:24:58.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T11:24:58.359Z"
             },
             {
               "$type": "Document",
@@ -106,14 +104,14 @@
               "RelativeDocumentMoniker": "AuthorizationModel\\UserAuthenticationService.cs",
               "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\AuthorizationModel\\UserAuthenticationService.cs",
               "RelativeToolTip": "AuthorizationModel\\UserAuthenticationService.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCcAAAAtAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T11:24:56.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RsaTools.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Dto\\RsaTools.cs",
               "RelativeDocumentMoniker": "Dto\\RsaTools.cs",
@@ -121,12 +119,11 @@
               "RelativeToolTip": "Dto\\RsaTools.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T10:41:41.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T10:41:41.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -139,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -147,8 +144,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-30T02:20:10.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T02:20:10.951Z"
             },
             {
               "$type": "Document",
@@ -160,8 +156,7 @@
               "RelativeToolTip": "Db\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T02:02:46.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-30T02:02:46.017Z"
             },
             {
               "$type": "Document",
@@ -171,27 +166,27 @@
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAADEAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAACQAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T01:52:37.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "AuthenticationMock.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\AuthorizationModel\\AuthenticationMock.cs",
               "RelativeDocumentMoniker": "AuthorizationModel\\AuthenticationMock.cs",
               "ToolTip": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\AuthorizationModel\\AuthenticationMock.cs",
               "RelativeToolTip": "AuthorizationModel\\AuthenticationMock.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T01:52:33.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -199,12 +194,11 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAgwHoAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T13:29:17.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-29T13:29:17.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\billi\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u041B\u0435\u043A\u0446\u0438\u0438\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u043A\u0430 web-\u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u043D\u0430 C#\\\u0421\u0435\u043C\u0438\u043D\u0430\u0440\u044B\\Mail\\ApiRegistration\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -212,8 +206,7 @@
               "RelativeToolTip": "Repositories\\UserRepository.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAowIUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T11:54:31.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-25T11:54:31.426Z"
             }
           ]
         }
