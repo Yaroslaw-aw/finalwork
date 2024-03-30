@@ -47,10 +47,8 @@ namespace ApiRegistration.Repositories
             }
         }
 
-        public async Task<User?> CheckUserAsync(string? email, string? password)
+        public async Task<User?> CheckUserAsync(string email, string password)
         {
-            if (email is null || password is null) throw new ArgumentNullException("email or password can't ne null");
-
             using (context)
             {
                 User? user = await context.Users.FirstOrDefaultAsync(usr => usr.Email == email);
@@ -68,7 +66,7 @@ namespace ApiRegistration.Repositories
                 }
                 else
                 {
-                    throw new Exception("Wrong password");
+                    throw new Exception("Wrong email or password");
                 }
             }
         }        
@@ -100,14 +98,14 @@ namespace ApiRegistration.Repositories
         public async Task<IEnumerable<GetUsersDto>?> GetUsersAsync()
         {
             IEnumerable<User>? users = null;
-            IEnumerable<GetUsersDto?>? usersDto = null;
-            using (context)
-            {
-                users = await context.Users.AsNoTracking().ToListAsync();
-            }
+            IEnumerable<GetUsersDto>? usersDto = null;
+
+            using (context) users = await context.Users.AsNoTracking().ToListAsync();
+
+            if (users is null) return null;
+
             usersDto = mapper.Map(users, usersDto);
 
-            if (usersDto is null) return null;
             return usersDto;
         }
 
@@ -120,7 +118,7 @@ namespace ApiRegistration.Repositories
         private byte[] GenerateSalt()
         {
             byte[] salt = new byte[32];
-            using (var rng = RandomNumberGenerator.Create())
+            using (RandomNumberGenerator? rng = RandomNumberGenerator.Create())
             {
                 rng.GetBytes(salt);
             }
@@ -129,13 +127,12 @@ namespace ApiRegistration.Repositories
 
         private byte[] HashPassword(string password, byte[] salt)
         {
-            using (var sha512 = SHA512.Create())
+            using (SHA512? sha512 = SHA512.Create())
             {
                 byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
                 byte[] data = passwordBytes.Concat(salt).ToArray();
                 return sha512.ComputeHash(data);
             }
         }
-
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IUserAuthenticationService
     {
-        Task<UserModel> AuthenticateAsync(LoginModel loginModel);
+        Task<string> AuthenticateAsync(LoginModel loginModel);
     }
 }

@@ -14,15 +14,11 @@ namespace ApiRegistration.Controllers
     [Route("[controller]")]
     public class LoginController : Controller
     {
-        private readonly IConfiguration config;
         private readonly IUserAuthenticationService authenticationService;
-        private readonly IUserRepository userRepository;
 
-        public LoginController(IConfiguration config, IUserAuthenticationService authenticationService, IUserRepository userRepository)
+        public LoginController(IUserAuthenticationService authenticationService)
         {
-            this.config = config;
             this.authenticationService = authenticationService;
-            this.userRepository = userRepository;
         }
 
         private static UserRole RoleIdToUserRole(RoleId roleId)
@@ -33,22 +29,12 @@ namespace ApiRegistration.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost(template: "Login")]
+        [HttpPost(template: nameof(Login))]
         public async Task<ActionResult<string>> Login([FromBody] LoginModel userLogin)
         {
             try
             {
-                User? user = await userRepository.CheckUserAsync(userLogin?.Email, userLogin?.Password);
-
-                UserModel userModel = new UserModel
-                {
-                    UserEmail = userLogin.Email,
-                    Password = userLogin.Password,
-                    Role = RoleIdToUserRole(user.RoleId),
-                    userId = user.userId
-                };
-
-                string token = GenerateToken(userModel);
+                string token = await authenticationService.AuthenticateAsync(userLogin);
 
                 return Accepted(nameof(Login), token);
             }
@@ -58,25 +44,6 @@ namespace ApiRegistration.Controllers
             }
         }
 
-        private string GenerateToken(UserModel user)
-        {
-            RsaSecurityKey? key = new RsaSecurityKey(RsaTools.GetPrivateKey());
-            SigningCredentials? credentials = new SigningCredentials(key, SecurityAlgorithms.RsaSha256Signature);
-
-            Claim[]? claim = new[]
-            {
-                new Claim(ClaimTypes.PrimarySid, user.userId.ToString()),
-                new Claim(ClaimTypes.Email, user.UserEmail),
-                new Claim(ClaimTypes.Role, user.Role.ToString()),
-            };
-
-            JwtSecurityToken? token = new JwtSecurityToken(config["Jwt:Issuer"],
-                config["Jwt:Audience"],
-                claim,
-                expires: DateTime.Now.AddMinutes(60),
-                signingCredentials: credentials);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        
     }
 }

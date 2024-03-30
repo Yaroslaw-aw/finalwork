@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiMailServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ccc65294682bb0e0e07e42a38924d369025a1bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1f6803586029bf8802653bc487a0f3271ef6563")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiMailServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiMailServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,17 +1,16 @@
 ﻿using ApiMailServer.Db;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace ApiMailServer.Repositories
 {
     public class ServerRepository : IServerRepository
     {
         private readonly MessageContext context;
-        private HttpClient client;
 
         public ServerRepository(MessageContext context)
         {
             this.context = context;
-            client = new HttpClient();
         }
 
         public async Task<Guid?> WriteMessageAsync(Message message, Guid producerId)
@@ -30,9 +29,9 @@ namespace ApiMailServer.Repositories
         {
             using (context)
             {
-                IEnumerable<Message> messages = await context.Messages
-                                                      .Where(message => message.ConsumerId == consumerId &&
-                                                                        message.Status == MessageStatus.Sent).ToListAsync();
+                //IQueryable<Message> query = context.Messages;
+                IEnumerable<Message>? messages = await context.Messages.Where(message => message.ConsumerId == consumerId &&
+                                                                                         message.Status == MessageStatus.Sent).ToListAsync();
 
                 foreach (var message in messages)
                 {

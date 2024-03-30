@@ -10,6 +10,8 @@ services:
     hostname: postgreshost
     environment:
       POSTGRES_PASSWORD: example
+    ports:
+      - "5432:5432"
     networks:
       - redis-network
 
@@ -21,8 +23,6 @@ services:
       - 8080:8080
     networks:
       - redis-network
-    depends_on:
-      db
 
   redis:
     image: redis:latest

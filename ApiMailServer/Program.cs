@@ -21,7 +21,7 @@ namespace ApiMailServer
             IConfigurationRoot? configuration = config.Build();
 
             string? postgresConnection = configuration.GetConnectionString("db");
-            builder.Services.AddDbContext<MessageContext>(options => options.LogTo(Console.WriteLine).UseNpgsql(postgresConnection));
+            builder.Services.AddDbContext<MessageContext>(options => options.LogTo(Console.WriteLine).LogTo(Console.WriteLine).UseNpgsql(postgresConnection));
 
             builder.Services.AddScoped<IServerRepository, ServerRepository>();
             builder.Services.AddAutoMapper(typeof(MappingProfile));

@@ -23,7 +23,7 @@ namespace ApiRegistration.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost(template: "AddUser")]
+        [HttpPost(template: nameof(AddUser))]
         public async Task<ActionResult<Guid?>> AddUser([FromBody] LoginModel loginModel)
         {
             Guid? userId = null;
@@ -55,22 +55,22 @@ namespace ApiRegistration.Controllers
         }
 
 
-        [HttpGet(template: "GetUsers")]
+        [HttpGet(template: nameof(GetUsers))]
         [Authorize]
-        public async Task<ActionResult<IEnumerable<GetUsersDto>?>> GetUsersAsync()
+        public async Task<ActionResult<IEnumerable<GetUsersDto>?>> GetUsers()
         {
             if (redis.TryGetValue("users", out List<GetUsersDto>? cacheUsers) && cacheUsers is not null)
-                return Accepted("GetUsers", cacheUsers);
+                return Accepted(nameof(GetUsers), cacheUsers);
 
-            IEnumerable<GetUsersDto>? users = await userRepository.GetUsersAsync();
+            IEnumerable<GetUsersDto?>? users = await userRepository.GetUsersAsync();
 
-            if (users is not null) redis.SetData<IEnumerable<GetUsersDto>>("users", users);
+            if (users is not null) redis.SetData("users", users);
 
-            return Accepted("GetUsers", users);
+            return Accepted(nameof(GetUsers), users);
         }
 
 
-        [HttpDelete(template: "DeleteUser")]
+        [HttpDelete(template: nameof(DeleteUser))]
         [Authorize(Roles = nameof(UserRole.Administrator))]
         public async Task<ActionResult<Guid?>> DeleteUser(Guid userId)
         {
@@ -82,7 +82,7 @@ namespace ApiRegistration.Controllers
 
         [HttpGet(template: nameof(GetCurrentUserId))]
         [Authorize]
-        public async Task<ActionResult<Guid?>> GetCurrentUserId()
+        public ActionResult<Guid> GetCurrentUserId()
         {
             Guid currentUserId = CurrentUserId();
 
