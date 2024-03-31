@@ -28,7 +28,7 @@ namespace ApiRegistration
             builder.Services.AddSingleton<RsaTools>();
             builder.Services.AddSingleton<Redis>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
-            //builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
+            builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
             builder.Services.AddMemoryCache();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 

@@ -28,8 +28,7 @@ namespace ApiMailServer.Repositories
         public async Task<IEnumerable<Message>?> GetMessagesAsync(Guid consumerId)
         {
             using (context)
-            {
-                //IQueryable<Message> query = context.Messages;
+            {                
                 IEnumerable<Message>? messages = await context.Messages.Where(message => message.ConsumerId == consumerId &&
                                                                                          message.Status == MessageStatus.Sent).ToListAsync();
 
